@@ -1,0 +1,8 @@
+<button (click)="openStage()">Öffne Bühne</button>
+
+<app-media-sources-list
+	[mediaSources]="mediaSources$ | async"
+	(selectEvent)="onMediaSourceSelect($event)">
+</app-media-sources-list>
+
+<video></video>

@@ -1,0 +1,32 @@
+.media-source {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+
+  &:hover {
+    background: #f2f2f2;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__thumbnail {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+  }
+}

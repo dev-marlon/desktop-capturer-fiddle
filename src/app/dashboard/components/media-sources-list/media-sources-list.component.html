@@ -1,0 +1,11 @@
+<article
+	class="media-source"
+	*ngFor="let mediaSource of mediaSources"
+	(click)="select(mediaSource)">
+	<div class="media-source__thumbnail">
+		<img width="auto" height="auto" [src]="mediaSource.thumbnail.toDataURL()" />
+	</div>
+	<div class="media-source__name">
+		{{ mediaSource.name }}
+	</div>
+</article>
